@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>calender</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <h2>calender details by entermonth place number. </h2>
+      <label>enter place number of calender.</label>  
+      <input type="number" id=placenumber onkeyup ="ischeck()" value=""><br>
+      <span id="output">...</span><br>
+
+      <script>
+            function ischeck()
+         {
+          var month = Number (document.getElementById('placenumber').value);
+        
+          switch (month)           
+           {
+            case 1:
+                  document.getElementById("output").innerHTML="January and it has 31days.";          
+                  
+                  break;
+                  case 2:
+                  document.getElementById("output").innerHTML="februaryJanuary and it has 28days.";
+            
+                  
+                  break;
+                  case 3:
+                  document.getElementById("output").innerHTML="march and it has 31days.";                                  break;
+                  case 4:
+                  document.getElementById("output").innerHTML="april and it has 31days.";                                break;
+                  case 5:
+                  document.getElementById("output").innerHTML="may and it has 30days.";
+                                     
+                  break;
+                  case 6:
+                  document.getElementById("output").innerHTML="June and it has 30days.";
+                                    
+         break;
+         case 7:
+                  document.getElementById("output").innerHTML="July and it has 31days.";
+            
+                  
+          break;
+          case 8:
+                  document.getElementById("output").innerHTML="august and it has 31days.";           
+                     
+          break;
+          case 9:
+                  document.getElementById("output").innerHTML="september and it has 30days.";
+            
+                  
+          break;
+          case 10:
+                  document.getElementById("output").innerHTML="october and it has 31days.";
+            
+                  
+          break;
+           case 11:
+                  document.getElementById("output").innerHTML="november and it has 30days.";
+            
+                  
+           break;
+           case 12:
+                  document.getElementById("output").innerHTML="december and it has 31days.";
+            
+                  
+           break;
+          
+           default: 
+                document.getElementById("output").innerHTML = "Enter valid number."
+                  break;         }
+        } 
+      </script>       
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
