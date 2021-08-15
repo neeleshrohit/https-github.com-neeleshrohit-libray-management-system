@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <h1>
+        Leap year check - </h1>
+        
+        <input type="number" name="" id="leapyear"
+        onkeyup="ischeck()">
+        <span id="showalert"></span><br>
+
+        <script>
+            function  ischeck(){
+  var num = document.getElementById('leapyear').
+  value;
+  
+  if ((num%4) === 0){
+      document.getElementById('showalert').
+      innerHTML = +num+ " is a leap year";
+  }
+  else {
+      document.getElementById('showalert').
+      innerHTML = +num+ "year is not a leap year"
+  }
+
+  if(num === ""){
+      document.getElementById('showalert').
+      innerHTML = ""
+  }  
+}             
+
+        </script>        
+</body>
+</html>

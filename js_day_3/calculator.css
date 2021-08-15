@@ -1,0 +1,22 @@
+contenor{
+    margin:auto;
+
+}
+input{
+    border-radius: 20px;
+    font-size: 32px;
+    border: 5px solid chocolate; 
+}
+button{
+    border-radius: 20px;  
+    font-size: 45px;
+    background-color: rgba(133, 148, 67, 0.459);
+    width:100px;
+    height: 56px;
+}
+.calculator{
+    background-color: cornflowerblue;
+    padding:25px;
+    border-radius: 55px;
+    display: inline-block;
+}
